@@ -1,0 +1,12 @@
+<div class="container">
+	<div class="row">
+		<div class="col-6 text-center bg-secondary">
+			<app-lista [tareas]="arrTareas"></app-lista>
+		</div>
+		<div class="col-6 text-center bg-info">
+			<app-formulario (envioTarea)="handleEnviarTarea($event)"></app-formulario>
+		</div>
+	</div>
+</div>
+
+{{arrTareas | json}}

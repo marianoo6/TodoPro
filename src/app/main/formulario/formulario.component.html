@@ -1,0 +1,18 @@
+<div class="form-group">
+    <label class="font-weight-bold mt-3" for="inputTitulo">Titulo de la Tarea</label>
+    <input type="text" class="form-control" id="inputTitulo" placeholder="Titulo de la tarea" [(ngModel)]="titulo">
+</div>
+
+<div class="form-check">
+  <input class="form-check-input mt-5" type="radio" name="exampleRadios" id="exampleRadios1" value="true" [(ngModel)]="completa">
+  <label class="form-check-label mt-5" for="exampleRadios1">
+    Completa
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input mt-2" type="radio" name="exampleRadios" id="exampleRadios2" value="false" [(ngModel)]="completa">
+  <label class="form-check-label mt-2" for="exampleRadios2">
+    Incompleta
+  </label>
+</div>
+<button (click)="enviarTarea()" class="btn btn-dark mt-5 mb-5">Enviar</button>
